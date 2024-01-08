@@ -1,0 +1,24 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+    {
+        date:"Marzo 2022 - Actualidad",
+        title:"Teralco Solutions",
+        description:"Trabajando en el proyecto para la entidad Cajamar. Creación y maquetación de nuevas pantallas para el sitio web del Grupo Cooperativo Cajamar. Uso de herramientas como HTML5, JavaScript y CSS3 además de librerías como Jquery, Bootstrap y Tailwind CSS. Uso de Java y SQL para el funcionamiento de backend.",
+        work:"Full Stack Developer"
+    }
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">    
+    
+    {
+        EXPERIENCE.map( experience => (
+        <li class="mb-10 ms-6">   
+            <ExperienceItem {...experience}/>
+        </li>
+        ))
+    }
+    
+</ol>
+
